@@ -1,9 +1,13 @@
 package ar.beniko.kotlinbasics
 
 fun main(){
-    println(addUp(1,2))
+    println(getAvg(10,9))
 }
 
 fun addUp(a: Int, b: Int) : Int{
     return a + b
+}
+
+fun getAvg(vararg marks: Int) : Double{
+    return marks.average()
 }
